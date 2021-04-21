@@ -6,7 +6,7 @@ import (
 )
 
 func TestSayGood(t *testing.T) {
-	if help.SayGood("hello") == "say: hell2o" {
+	if help.SayGood("hello") != "say: hell2o" {
 		t.Fatalf("no ok")
 	} else {
 		t.Log("ok")
